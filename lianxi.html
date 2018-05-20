@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>咸蛋超人</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1400" height="800"
+        style="border:1px solid #000000;">
+</canvas>
+<script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(700,400,300,0,2*Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(550,300,50,0,2*Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(850,300,50,0,2*Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(700,550,50,0,Math.PI);
+    ctx.stroke();
+</script>
+
+</body>
+</html>
